@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Structure Demo</title>
+        <meta name="author" content="Carlos Marquez" />
+        <meta
+            name="description"
+            content="This is a basic index template; therefore, the content of this tag will need to be updated later."
+        />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/modern-reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+				<h1>HTML5 Forms</h1>
+			</header>
+			<main>
+				<!-- Every form element needs two attributes
+					1. action: is where the data will be sent to
+					2. method: is how the data will get there
+						a. POST most secure, uses data encryption
+						b. GET plain text on address bar
+				 -->
+				<form action="#" method="POST">
+					<div>
+						<!-- Every input requires a label -->
+						<!-- The label's for attribute must match the input's ID -->
+						<label for="text-field">Generic Text Field</label>
+						<!-- Input elements are void (or self-closing) elements -->
+						<input type="text" id="text-field" placeholder="First and Last Name" autofocus>
+						<!-- The palceholder attribute gives users an exmaple of what we're looking for -->
+						<!-- The autofocus attribute focurses on this particular field once hte page loads -->
+					</div>
+				</form>
+			</main>
+        </div>
+    </body>
+</html>

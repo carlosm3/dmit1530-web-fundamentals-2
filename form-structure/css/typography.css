@@ -1,0 +1,21 @@
+/* This is an example of the sorts of custom styles you
+   could use to kickstart your projects.
+
+   Note: we will learn more about typography and 
+         typographic styles later on in the course. */
+
+body { 
+	text-rendering: optimizeLegibility;
+	font: 100%/1.5 Helvetica, Arial, sans-serif;
+}
+
+h1      { font-size: 2em;       /* 2*16 = 32 */         }
+h2      { font-size: 1.5em;     /* 1.5*16 = 24 */       }
+h3      { font-size: 1.17em;    /* 1.17*16 = 18.72 */   }
+h4      { font-size: 1em;       /* 1*16 = 16 */         }
+h5      { font-size: 0.83em;    /* 0.83*16 = 13.28 */   }
+h6      { font-size: 0.75em;    /* 0.75*16 = 12 */      }
+p 		{ line-height: 1.5;  margin: 0 0 1em;           }
+
+a {   text-decoration: none; }
+
