@@ -1,28 +1,158 @@
 :root {
-    --cream: #e5e1db;
-    --yellow: #cfb450;
-    --grey: #6b6267;
-    --light-grey: #d2cfd1;
+   --cream: #e5e1db;
+   --yellow: #cfb450;
+   --grey: #6b6267;
+   --light-grey: #d2cfd1;
 }
+
 
 /* Helper Classes */
 
-/* 
-    Methods for hiding elements with CSS
 
-        display: none;          -> completely gets rid of the element; it will no longer take up space within the layout and is not accessible by a screen reader.
-
-        visibility: hidden;     -> hides the element, but is still takes up space within the layout.
-
-        opacity: 0;             -> similar to the method above.
-
-    However, none of these methods are idea for hiding elements that we do not want in our layout BUT we still want screen readers to access / announce.
+/* Methods for Hiding Elements in CSS
+ 
+     display: none;   -> completely gets rid of the element; it will no longer take up space within the layout and is not accessible by a screen reader.
+ 
+     visibility: hidden;   -> hides the element, but it still takes up space within the layout.
+ 
+     opacity: 0;    -> similar to the method above.
+ 
+     However, none of these methods are ideal for hiding elements that we do not want in our layout BUT we still want screen readers to access / announce.
+ 
 */
+
 .sr-only {
-    position: absolute;
-    left: -9999px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+   position: absolute;
+   left: -9999px;
+   top: auto;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+}
+
+
+/* Universal Styles */
+
+body {
+   font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+h2 {
+   margin-left: 1.5rem;
+}
+
+
+/* Header Styles */
+
+header {
+   background-color: var(--cream);
+   padding: 0 1rem;
+}
+
+.header-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header-top>button,
+input[type="submit"] {
+   background-color: var(--grey);
+   color: var(--cream);
+   border: none;
+   border-radius: 5px;
+   text-transform: uppercase;
+}
+
+
+/* This is not best practice, but for the sake of brevity ... */
+
+nav {
+   display: none;
+}
+
+header form {
+   display: flex;
+}
+
+header form input,
+header form button {
+   height: 40px;
+   padding: 0.5rem;
+   margin-bottom: 0.5rem;
+   border: none;
+}
+
+header form input {
+   border-radius: 5px 0 0 5px;
+   width: calc(100% - 40px);
+}
+
+header form button {
+   background-color: var(--yellow);
+   margin-left: -3px;
+   border-radius: 0 5px 5px 0;
+}
+
+header form button img {
+   height: 24px;
+}
+
+
+/* Login Form */
+
+main {
+   padding: 1rem;
+}
+
+.login-form {
+   padding: 1.5rem;
+   border: 1px solid var(--light-grey);
+   border-radius: 5px;
+   box-shadow: 3px 3px 5px var(--light-grey);
+}
+
+.login-form label {
+   display: block;
+}
+
+.login-form>div {
+   margin-bottom: 0.75rem;
+}
+
+.login-form input[type="submit"] {
+   background-color: var(--yellow);
+   padding: 0.25rem 0.5rem;
+   border: 2px solid var(--yellow);
+   transition: all 0.3s ease-in-out;
+}
+
+.login-form input[type="submit"]:hover,
+.login-form input[type="submit"]:focus,
+.login-form input[type="submit"]:focus-within {
+   background-color: white;
+   color: var(--grey);
+   cursor: pointer;
+}
+
+
+/* 
+     Google Material UI Colour Palette
+ 
+     Amber:  FF9800;
+     Green:  4CAF50;
+ */
+
+*:focus {
+   outline: none !important;
+}
+
+.login-form input[type="email"]:invalid,
+.login-form input[type="password"]:invalid {
+   outline: 3px solid #ff9800;
+}
+
+.login-form input[type="email"]:valid,
+.login-form input[type="password"]:valid {
+   outline: 3px solid #4caf50;
 }
