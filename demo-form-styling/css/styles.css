@@ -1,0 +1,28 @@
+:root {
+    --cream: #e5e1db;
+    --yellow: #cfb450;
+    --grey: #6b6267;
+    --light-grey: #d2cfd1;
+}
+
+/* Helper Classes */
+
+/* 
+    Methods for hiding elements with CSS
+
+        display: none;          -> completely gets rid of the element; it will no longer take up space within the layout and is not accessible by a screen reader.
+
+        visibility: hidden;     -> hides the element, but is still takes up space within the layout.
+
+        opacity: 0;             -> similar to the method above.
+
+    However, none of these methods are idea for hiding elements that we do not want in our layout BUT we still want screen readers to access / announce.
+*/
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
