@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Header with accessibile Search Bar">
+    <title>Demo - Styling Forms</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <h1 class="sr-only">Search Co.</h1>
+            <img src="img/logo.jpg" alt="Search Co. Logo">
+            <button>Menu</button>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Memberships</a></li>
+                </ul>
+            </nav>
+        </div> <!-- End of header top -->
+        <!-- ARIA: search role
+
+            This role is used to identify an area of a page use to search the page, website, or a collection of sites. It is a landmark role, which can be used by assistive technologies to identify and navigate to large sections of the document.
+            
+            tl;dr: this makes our search form more accessible
+        -->
+        <form action="#" method="GET" role="search">
+            <label class="sr-only" for="search-bar">Search</label>
+            <input id="search-bar" name="search-bar" placeholder="Search" type="text">
+        </form>
+    </header>
+    <main>
+
+    </main>
+</body>
+</html>
