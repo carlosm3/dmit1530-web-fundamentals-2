@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222;
+  color: white;
+}
+
+h1 {
+  padding: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px black;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+.horizontal-content {
+  display: flex;
+  height: 250px;
+  align-items: center;
+  overflow: scroll;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.horizontal-content > div {
+  background-color: #3f1917;
+  flex: 0 0 330px;
+  height: 180px;
+  margin: 1rem 0.5rem;
+  border-radius: 0.2rem;
+  transition: all 400ms ease-in;
+}
+
+.horizontal-content > div:hover,
+.horizontal-content > div:active {
+  flex: 0 0 350px;
+  height: 210px;
+  background-color: #7B2E2A;
+}
+
+/* Vendor Prefixes */
+/* .horizontal-content::-webkit-scrollbar {
+  background: transparent;
+} */
+
+.parallax-image {
+  background-image: url('../img/movie.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* This property creates the parallax scroll effect. */
+  background-attachment: fixed;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filler-text {
+  padding: 4rem 0;
+  max-width: 60ch;
+  margin: auto;
+}
