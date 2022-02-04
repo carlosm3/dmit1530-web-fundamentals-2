@@ -1,0 +1,87 @@
+@import "reset";
+
+// Colour Palette
+$off-white: #faf7ff;
+$blue: #0e83cd;
+$off-black: #263238;
+$btn-colours: (
+    "btn-green": #7CB342,
+    "btn-yellow": #FBC02D,
+    "btn-orange": #F57C00,
+    "btn-red": #E64A19,
+    "btn-grey": #455A64,
+);
+
+@mixin flexy($flow, $justify, $align) {
+    display: flex;
+    flex-flow: $flow;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin transitions($trans...) {
+    -webkit-transition: $trans;
+	-moz-transition: $trans;
+	transition: $trans;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.container {
+    max-width: 60rem;
+    margin: auto;    
+}
+
+header {
+    background: $off-white;
+    color: #89867e;
+    .container {
+        height: 30vh;
+        @include flexy(column wrap, center, center);
+        h1 {
+            font-size: 2.625rem;
+        }
+        p {
+            font-size: 1.575rem;
+            opacity: 0.5;
+        }
+    }
+}
+
+section {
+    background: $blue;
+    color: $off-white;
+    .container {
+        height: 70vh;
+        @include flexy(column wrap, center, center);
+        h2 {
+            font-size: 1.575rem;
+            margin-bottom: 2rem;
+        }
+        .buttons {
+            width: 100%;
+            @include flexy(row wrap, space-around, center)
+        }
+        a {
+            padding: 1rem 2rem;
+            border-radius: 0.4rem;
+            text-decoration: none;
+            letter-spacing: 1px;
+            color: $off-white;
+            border: 0.1rem solid $off-white;
+            @include transitions(all 0.3s ease-in-out);
+        }
+    }
+}
+
+@each $btn-colours, $i in $btn-colours {
+    a {
+        &.#{$btn-colours}:hover {
+            background-color: $i;
+        }	
+    }
+}

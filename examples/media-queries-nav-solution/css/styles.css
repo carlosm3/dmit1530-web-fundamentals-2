@@ -1,0 +1,96 @@
+/*
+	Generic or universal styles will always 
+	go at the top of our stylesheet. These
+	are things that will be inherited by 
+	every element unless they are overwritten
+	by a media query down below.
+*/
+
+body {
+	font-family: 'Avenir Next', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 1.2rem;
+	line-height: 3rem;
+}
+
+header {
+	background-color: #212121;
+	border-bottom: 1px solid teal;
+}
+
+/*
+	Because we're taking a mobile-first design
+	approach, we're going to style our menu
+	vertically first.
+*/
+
+a {
+	display: block;
+	text-decoration: none;
+	color: #faf7ff;
+}
+
+.flex {
+	padding: 1rem;
+}
+
+nav ul {
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+nav ul li {
+	border-bottom: 1px solid teal;
+	transition: all 0.5s ease;
+}
+
+nav ul li:last-child {
+	border-bottom: none;
+}
+
+nav ul li:hover {
+	background-color: teal;
+}
+
+/*
+	When our viewport is large enough to
+	accommodate all of the contents of the 
+	navigation bar, we will switch to a 
+	horizontal orientation. 
+*/
+
+@media screen and (min-width: 750px) {
+	.flex {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	nav ul {
+		display: flex;
+	}
+
+	nav ul li {
+		border: none;
+		padding: 0 2rem;
+	}
+}
+
+/*
+	This final media query is going to 
+	restrict the width of our menu once our
+	viewport reaches a certain size.
+*/
+
+@media screen and (min-width: 1400px) {
+	.flex {
+		max-width: 1400px;
+		margin: auto;
+	}
+}
+
+
+
+
+
+

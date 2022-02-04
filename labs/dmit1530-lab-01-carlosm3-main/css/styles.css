@@ -1,0 +1,127 @@
+/*
+	COLOUR PALETTE
+
+	Off-White         #acc2c7;
+	Navy BG           #182634;
+	Pastel Yellow     #edc874;
+	Off-Black Type    #131313;
+*/
+
+/* UNIVERSAL STYLES, TYPOGRAPHY & COLOURS */
+
+body {
+    background-color: #acc2c7;
+    color: #131313;
+}
+
+header {
+    color: #acc2c7;
+    background-color: #182634;
+    margin: 0 0 1.5rem 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Nunito", sans-serif;
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+
+/* On your own, convert the following pixel values to rem values */
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    padding: 2.5% 0 2.5% 0;
+}
+
+h2 {
+    font-size: 1.875rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    padding-bottom: 0.8rem;
+}
+
+a {
+    color: #182634;
+}
+
+/* MOBILE VIEW */
+header {
+    display: flex;
+    align-items: center;
+}
+
+header svg {
+    height: 4rem;
+    padding: 0 2.5% 0 2.5%;
+}
+
+header svg path {
+    fill: #acc2c7;
+}
+
+main {
+    padding: 2.5%;
+}
+
+main section {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+section img {
+    width: 40%;
+    margin-right: 1rem;
+}
+
+footer p {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1280px) {
+    header {
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    main section {
+        width: 49%;
+        display: block;
+    }
+
+    section img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+	main {
+		max-width: 1600px;
+		margin: 0 auto;
+	}
+}

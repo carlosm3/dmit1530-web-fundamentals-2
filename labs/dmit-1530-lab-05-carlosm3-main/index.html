@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us: Nelson &amp; Murdock, Attorneys At Law</title>
+        <meta name="author" content="Carlos Marquez | jmarquez2@nait.ca">
+        <meta name="description" content="This website is a mock legal firm serving the Manhattan, NY area. This page includes a form to contact us.">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/modern-reset.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="flex-container">
+                    <div class="flex-container logo">
+                        <!-- Court Icon -->
+                        <svg version="1.1" viewBox="0 0 27.598 27.598" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="4.022 9.9 3 21.899 7.799 21.899 6.778 9.9"/>
+                            <polygon points="20.82 9.9 19.799 21.899 24.598 21.899 23.576 9.9"/>
+                            <rect x="1.255" y="23.099" width="25.088" height="2.399"/>
+                            <rect y="26.098" width="27.598" height="1.2"/>
+                            <path d="m10.199 9.596 2.074 2.042-0.873 10.261h4.799l-0.875-10.262 2.074-2.042v-0.896h9.601v-2.003l-13.2-6.396-13.199 6.396v2.003h9.6l-1e-3 0.897zm5.998-0.502-2.398 2.362-2.399-2.362v-3.395h4.799v3.395h-2e-3z"/>
+                        </svg>
+                        <a href="#">
+                            <h1>Nelson &amp; Murdock</h1>
+                            <p>Attorneys At Law</p>
+                        </a>
+                    </div>
+                    <div class="menu-icon">
+                        <svg enable-background="new 0 0 297 297" version="1.1" viewBox="0 0 297 297" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m42.352 106.15c-23.353 0-42.352 18.999-42.352 42.352s18.999 42.352 42.352 42.352 42.352-18.999 42.352-42.352-18.999-42.352-42.352-42.352z"/>
+                            <path d="m148.5 106.15c-23.353 0-42.352 18.999-42.352 42.352s18.999 42.352 42.352 42.352 42.352-18.999 42.352-42.352-18.999-42.352-42.352-42.352z"/>
+                            <path d="m254.65 106.15c-23.353 0-42.352 18.999-42.352 42.352s18.999 42.352 42.352 42.352 42.352-18.999 42.352-42.352-18.999-42.352-42.352-42.352z"/>
+                        </svg>
+                        <p>Menu</p>
+                    </div>
+                    <!-- end of .menu-icon -->
+                </div>
+                <nav>
+                    <ul class="main-menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Practice Areas</a></li>
+                        <li><a href="#">Book Consultation</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end of .container -->
+        </header>
+        <main>
+            <section class="flex-container hero-banner">
+                <h2>Contact Us</h2>
+                <p>Need legal counsel? Get in touch with us today.</p>
+            </section>
+            <div class="container">
+                <section>
+                    <form action="#" method="POST">
+                        <div class="form-intro">
+                            <h3>Send Us A Message</h3>
+                            <p>Please fill out the following information to request either a call back or email response. You may also contact us directly through the provided contact information.</p>
+                        </div>
+                        <div class="form-flex">
+                            <div>
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" placeholder="ex. Karen" required>
+                                <span class="valid"></span>
+                            </div>
+                            <div>
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" placeholder="ex. Page" required>
+                                <span class="valid"></span>
+                            </div>
+                            <div>
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" placeholder="hello@email.com" required>
+                                <span class="valid"></span>
+                            </div>
+                            <div>
+                                <label for="subject">Subject</label>
+                                <select name="subject" id="subject">
+                                    <option value="appeal">Appeals</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="mutant-rights">Homo Superior Rights</option>
+                                    <option value="mra-2018">Mutant Registration Act 2018</option>
+                                    <option value="ny-va">New York Vigilante Act</option>
+                                    <option value="sokovia">Sokovia Accords</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- end of .form-flex -->
+                        <div>
+                            <label for="message">Your Message</label>
+                            <textarea id="message" placeholder="Message..." rows="5" required></textarea>
+                            <span class="valid"></span>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="spanish">
+                            <label for="spanish">¿ Usted prefieres en el español?</label>
+                        </div>
+                        <div>
+                            <button type="submit" href="#">Submit</button>
+                        </div>
+                        <p><img src="img/svg/exclamation.svg" alt="!"> These fields are required.</p>
+                        <p>By submitting this form, you agree to our personal information collection and data use policy.</p>
+                    </form>
+                </section>
+                <section class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="flex-container">
+                        <svg enable-background="new 0 0 264.018 264.018" version="1.1" viewBox="0 0 264.02 264.02" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m132.01 0c-42.66 0-77.366 34.706-77.366 77.366 0 11.634 2.52 22.815 7.488 33.24 0.1 0.223 0.205 0.442 0.317 0.661l58.454 113.18c2.146 4.154 6.431 6.764 11.106 6.764 4.676 0 8.961-2.609 11.106-6.764l58.438-113.15c0.101-0.195 0.195-0.392 0.285-0.591 5.001-10.455 7.536-21.67 7.536-33.341 2e-3 -42.66-34.704-77.366-77.364-77.366zm0 117.86c-22.329 0-40.495-18.166-40.495-40.495 0-22.328 18.166-40.494 40.495-40.494s40.495 18.166 40.495 40.494c0 22.329-18.166 40.495-40.495 40.495z"/>
+                            <path d="m161.81 249.02h-59.602c-4.143 0-7.5 3.357-7.5 7.5s3.357 7.5 7.5 7.5h59.602c4.143 0 7.5-3.357 7.5-7.5s-3.358-7.5-7.5-7.5z"/>
+                        </svg>
+                        <address>
+                            211 West 47th Street, Suite 316 <br>
+                            Hell's Kitchen, Manhattan <br>
+                            New York, NY &nbsp; 10019
+                        </address>
+                    </div>
+                    <div class="flex-container">
+                        <svg enable-background="new 0 0 53.942 53.942" version="1.1" viewBox="0 0 53.942 53.942" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m53.364 40.908c-2.008-3.796-8.981-7.912-9.288-8.092-0.896-0.51-1.831-0.78-2.706-0.78-1.301 0-2.366 0.596-3.011 1.68-1.02 1.22-2.285 2.646-2.592 2.867-2.376 1.612-4.236 1.429-6.294-0.629l-11.486-11.487c-2.045-2.045-2.233-3.928-0.632-6.291 0.224-0.309 1.65-1.575 2.87-2.596 0.778-0.463 1.312-1.151 1.546-1.995 0.311-1.123 0.082-2.444-0.652-3.731-0.173-0.296-4.291-7.27-8.085-9.277-0.708-0.375-1.506-0.573-2.306-0.573-1.318 0-2.558 0.514-3.49 1.445l-2.538 2.537c-4.014 4.013-5.467 8.562-4.321 13.52 0.956 4.132 3.742 8.529 8.282 13.068l14.705 14.705c5.746 5.746 11.224 8.66 16.282 8.66h1e-3c3.72 0 7.188-1.581 10.305-4.698l2.537-2.537c1.542-1.541 1.892-3.871 0.873-5.796z"/>
+                        </svg>
+                        <p><a href="tel:3325550192">Voice: (332) 555 0192</a></p>
+                    </div>
+                    <div class="flex-container">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 490" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 490 490">
+                            <path d="M405.079,275h-155c-8.284,0-15,6.716-15,15v60c0,8.284,6.716,15,15,15h155c8.284,0,15-6.716,15-15v-60  C420.079,281.716,413.363,275,405.079,275z M390.079,335h-125v-30h125V335z M475,145h-54.92V30c0-8.284-6.716-15-15-15H249.995  c-8.284,0-15,6.716-15,15v115h-45.132c-2.537-27.993-26.144-50-54.796-50H55.021C24.683,95,0,119.675,0,150.004v269.992  C0,450.325,24.683,475,55.021,475h80.046c28.652,0,52.259-22.007,54.796-50H475c8.284,0,15-6.716,15-15V160  C490,151.716,483.284,145,475,145z M160.089,419.996c0,13.787-11.225,25.004-25.021,25.004H55.021C41.225,445,30,433.783,30,419.996  V150.004C30,136.217,41.225,125,55.021,125h80.046c13.797,0,25.021,11.217,25.021,25.004V419.996z M264.995,160.238  c0.001-0.079,0.002-0.159,0.002-0.238s-0.001-0.159-0.002-0.238V45H390.08v170H264.995V160.238z M460,395H190.089V175h44.906v55  c0,8.284,6.716,15,15,15H405.08c8.284,0,15-6.716,15-15v-55H460V395z"/>
+                        </svg>
+                        <p>Fax: (332) 555 0193</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <hr>
+                <svg version="1.1" viewBox="0 0 27.598 27.598" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="4.022 9.9 3 21.899 7.799 21.899 6.778 9.9"/>
+                    <polygon points="20.82 9.9 19.799 21.899 24.598 21.899 23.576 9.9"/>
+                    <rect x="1.255" y="23.099" width="25.088" height="2.399"/>
+                    <rect y="26.098" width="27.598" height="1.2"/>
+                    <path d="m10.199 9.596 2.074 2.042-0.873 10.261h4.799l-0.875-10.262 2.074-2.042v-0.896h9.601v-2.003l-13.2-6.396-13.199 6.396v2.003h9.6l-1e-3 0.897zm5.998-0.502-2.398 2.362-2.399-2.362v-3.395h4.799v3.395h-2e-3z"/>
+                </svg>
+                <h4>&copy; 2021 Nelson &amp; Murdock</h4>
+                <p>All rights reserved.</p>
+                <p class="disclaimer">The content on this web site is provided for general information purposes only and does not constitute legal or other professional advice or an opinion of any kind. Users of this web site are advised to seek specific legal advice by contacting members of Nelson &amp; Murdock (or their own legal counsel) regarding any specific legal issues.</p>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>

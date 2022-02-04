@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Positioning Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <h1>Position Property</h1>
+    <section>
+        <p>
+            The CSS position property gives us alternate rules for positioning elements. If no position property is declared, it would
+            be the default position which is static. There are four different positioning properties (<span class="highlight">static</span>,
+            <span class="highlight">relative</span>, <span class="highlight">absolute</span>, and <span class="highlight">fixed</span>)
+            and along with them you can use the properties of top, right, bottom, and/or left to set the position values.
+        </p>
+        <h2>Static</h2>
+        <p>
+            The default position for all elements. Means the element is not positioned and falls in the natural flow of the document.
+        </p>
+        <div class="box">
+            <p class="box-paragraph">
+                I am a static box
+            </p>
+        </div>
+        <p>
+            This static div has no position property and is considered static. It falls where it would naturally go.
+        </p>
+        <h2>Relative</h2>
+        <p>
+            Uses the properties, top, right, bottom, or left along with an amount (positive or negative) value to offset the element
+            from where it naturally occurs in the document, making it relative to it's original, static position. The surrounding
+            elements are not affected at all, and sometimes they overlap.
+        </p>
+        <div class="relative box">
+            <p class="box-paragraph">
+                I am a relative box
+            </p>
+        </div>
+        <p>
+            This relative div has a relative position and a top value of 40px and a left value of 20px. That moves it down 40px and to
+            the right 20px from where it would have been positioned.
+        </p>
+        <img src="img/relative-code.png" alt="CSS code for relative position">
+        <h2>Absolute</h2>
+        <p>
+            The element this is applied to is then removed from the document flow and placed exactly where you specify it to go. Again,
+            use top, right, bottom, or left properties. It is relative to the nearest positioned ancestor. If it has no positioned
+            ancestors, it’s positioned relative to the body of the document.
+        </p>
+        <div class="absolute box">
+            <p class="box-paragraph">
+                I am a static box now. Make me absolute.
+            </p>
+        </div>
+        <p>
+            The above box has no relative parent. Therefore it will be offset with respect to the body when positioned absolutely.
+        </p>
+        <p>
+            Once the element has been positioned absolutely it's taken out of the flow of the document and it doesn't leave a gap or
+            space in it's original position. It also doesn't affect the flow of subsequent items.
+        </p>
+        <img src="img/absolute-code.png" alt="CSS code for absolute position">
+        <h3>Relative + Position Absolute</h3>
+        <p>
+            If you set a position relative to a parent element, and a position absolute to a child element, that child element’s position
+            is absolute within the parent element.
+        </p>
+        <div class="relative-2 box">
+            <p class="box-paragraph">
+                I am a relative box
+            </p>
+            <div class="absolute-2 box">
+                <p class="box-paragraph">I am a absolute box within a relative container.
+                </p>
+            </div>
+        </div>
+        <p>
+            If the first box's position was <span class="italicized">position: static;</span> its absolutely positioned child
+            would escape and would be positioned relative to the document body.
+        </p>
+        <img src="img/relative-absolute-code.png" alt="CSS code for absolute position in a relative container">
+        <h2>Fixed</h2>
+        <p>
+            If an element positioned fixed, it will be relative to the viewport and will always stay in the same place, even when the
+            page is scrolled. Properties top, right, bottom, and left are used.
+        </p>
+        <p>
+            Like absolute positioning, fixed positioning takes the element out of the documnet flow and don't leave a space where it
+            would have been. So, if you use a fixed header or footer make sure to leave room for it. Put a margin on the
+            container or body.
+        </p>
+        <div class="fixed box">
+            <p class="box-paragraph">
+                I am a static box. Make me fixed.
+            </p>
+        </div>
+        <img src="img/fixed-code.png" alt="CSS code for fixed position">
+        <p>
+            Fixed position with mobile browsers can be buggy.
+        </p>
+        <ul>
+            <li>- in iOS Safari 5-7, position:fixed will move to center of window with focus event on child text input field.</li>
+            <li>- In Android 4.0-4.3 position:fixed inside an iframe will cause unexpected behavior.</li>
+            <li>Source: http://caniuse.com</li>
+        </ul>
+    </section>
+</body>
+
+</html>

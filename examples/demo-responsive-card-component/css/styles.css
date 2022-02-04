@@ -1,0 +1,103 @@
+/* Initialising our CSS Variables / Custom Properties */
+:root {
+    --off-black: #323232;
+    --mid-grey: #e8e8e8;
+    --dark-grey: #718096;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--off-black);
+}
+
+/* Helper Classes */
+
+.container {
+    padding: 4rem 0.4rem;
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.center-align {
+    align-items: center;
+}
+
+/* Layout */
+
+.card {
+    max-width: 380px;
+    margin: auto;
+    margin-bottom: 2rem;
+    border: 1px solid var(--mid-grey);
+    border-radius: 0.4rem;
+    box-shadow: 3px 3px 5px var(--mid-grey);
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+p {
+    font-size: 0.875rem;
+    color: #67768c;
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+svg {
+    width: 1rem;
+    margin: 0 0.6rem;
+}
+
+svg path {
+    fill: var(--dark-grey);
+}
+
+.card-footer img {
+    width: 2.5rem;
+    margin-right: 0.6rem;
+    border-radius: 50%;
+}
+
+.card-footer p {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 800px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* The total width of the card is 720px. */
+    .card {
+        max-width: 720px;
+        display: flex;
+    }
+
+    /* Our source image is 200px wide. */
+    /* 200px / 720px = 27.78% */
+    picture {
+        flex-basis: 27.78%;
+    }
+
+    /* This leaves us with 520px to work with. */
+    /* 520px / 720px = 72.22% */
+    .card-body {
+        flex-basis: 72.22%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .container {
+        margin: auto;
+        max-width: 1500px;
+    }
+}

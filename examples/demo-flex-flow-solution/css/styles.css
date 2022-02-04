@@ -1,0 +1,85 @@
+body {
+    color: #fff;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 16px;
+}
+
+h2 {
+    font-size: 24px;
+    padding: 8px 16px;
+}
+
+/* Rainbow Gradient */
+
+.flex-container div:nth-child(1) h2 {
+    background-color: #c82713;
+}
+
+.flex-container div:nth-child(2) h2 {
+    background-color: #f75523;
+}
+
+.flex-container div:nth-child(3) h2 {
+    background-color: #ff8234;
+}
+
+.flex-container div:nth-child(4) h2 {
+    background-color: #ffaf46;
+}
+
+.flex-container div:nth-child(5) h2 {
+    background-color: #f1d24d;
+}
+
+.flex-container div:nth-child(6) h2 {
+    background-color: #c9ef4d;
+}
+
+.flex-container div:nth-child(7) h2 {
+    background-color: #43ff71;
+}
+
+.flex-container div:nth-child(8) h2 {
+    background-color: #00f29e;
+}
+
+.flex-container div:nth-child(9) h2 {
+    background-color: #00dcc3;
+}
+
+.flex-container div:nth-child(10) h2 {
+    background-color: #00bae9;
+}
+
+.flex-container div:nth-child(11) h2 {
+    background-color: #2791fb;
+}
+
+.flex-container div:nth-child(12) h2 {
+    background-color: #3d67df;
+}
+
+.item {
+    border: 1px solid #fff;
+    margin: 0 16px 16px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+}
+
+
+
+
+

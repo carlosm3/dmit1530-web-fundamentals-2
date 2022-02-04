@@ -1,0 +1,98 @@
+/* Colour Palette 
+
+#a64f03
+#732c02
+#730202
+#400101
+#280000
+
+*/
+
+body {
+	color: white;
+	font-family: sans-serif;
+}
+
+h1, h2 {
+	text-align: center;
+	font-weight: bold;
+}
+
+h2 {
+	margin-bottom: 2rem;
+}
+
+p {
+	margin-top: 1.5rem;
+}
+
+img {
+	width: 100%;
+}
+
+header,
+main section,
+footer {
+	padding: 5%;
+}
+
+header {
+	background-color: #a64f03;
+	margin: 2.5% 0;
+}
+
+main > section {
+	background-color: #732c02;
+	margin: 0 0 2.5% 0;
+}
+
+.flex-container section {
+	background-color: #730202;
+}
+
+footer {
+	background-color: #400101;
+	margin: 2.5% 0;
+}
+
+@media screen and (min-width: 960px) {
+	.flex-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.flex-container section {
+		width: 31%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	header,
+	main section,
+	footer {
+		padding: 4rem;
+	}
+
+	main > section {
+		margin: 0 0 2rem 0;
+	}
+
+	footer {
+		margin: 2rem 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+

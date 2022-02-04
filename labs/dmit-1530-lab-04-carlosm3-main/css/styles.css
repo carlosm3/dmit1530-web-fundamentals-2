@@ -1,0 +1,143 @@
+/* Custom Propterties / CSS Variables */
+:root {
+  --black: #11151f;
+  --white: #fcfcfc;
+  --mid-grey: #f1f1f1;
+  --dark-grey: #d4d4d4;
+  --yellow: #e5b261;
+  --grey-blue: #374456;
+  --grey-blue-hover: #283040;
+}
+
+/* Universal Styles & Helper Classes */
+body {
+  font-family: "Work Sans", sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+section {
+  min-height: 100vh;
+}
+
+section > div:first-of-type {
+  min-height: 40rem;
+  background: url(../img/work-at-home-with-pets.webp) center / cover;
+}
+
+.wide-flex {
+  padding: 1rem;
+}
+
+/* Signup Form */
+form {
+  background-color: var(--mid-grey);
+  border-radius: 5px;
+}
+
+form p:first-of-type {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--white);
+  background-color: var(--yellow);
+  padding: 1rem;
+  border-radius: 5px 5px 0 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0 0.75rem;
+}
+
+label {
+  display: block;
+}
+
+input {
+  width: 100%;
+  height: 2.5rem;
+  background-color: var(--white);
+  border: 1px solid var(--dark-grey);
+  border-radius: 5px;
+}
+
+form p:last-of-type,
+input[type="submit"] {
+  margin: 0 0.75rem;
+}
+
+input[type="submit"] {
+  width: calc(100% - 1.5rem);
+  color: var(--white);
+  background-color: var(--grey-blue);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--grey-blue-hover);
+  cursor: pointer;
+}
+
+form div,
+form p:last-of-type {
+  padding-bottom: 1.5rem;
+}
+
+form a {
+  color: var(--grey-blue);
+}
+
+/* Media Queries */
+
+/* This media query switches just the form to a two-column layout. */
+@media screen and (min-width: 700px) {
+  .wide-flex {
+    padding: 2rem;
+  }
+
+  fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  fieldset > div {
+    flex-basis: 49%;
+  }
+}
+
+/* This media query flexes everything and changes the background image. */
+@media screen and (min-width: 1000px) {
+  section {
+    display: flex;
+    align-items: center;
+  }
+
+  .wide-flex {
+    padding: 0 4rem;
+    width: 49%;
+    min-width: 44rem;
+  }
+
+  section > div:first-of-type {
+    width: 49%;
+    height: 100vh;
+    background: url(../img/work-at-home.webp) center / cover;
+  }
+}
+
+/* This stops everything from growing any further */
+@media screen and (min-width: 1600px) {
+  section {
+    max-width: 100rem;
+  }
+}

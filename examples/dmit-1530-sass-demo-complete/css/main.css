@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1.3;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.container {
+  max-width: 60rem;
+  margin: auto;
+}
+
+header {
+  background: #faf7ff;
+  color: #89867e;
+}
+
+header .container {
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container h1 {
+  font-size: 2.625rem;
+}
+
+header .container p {
+  font-size: 1.575rem;
+  opacity: 0.5;
+}
+
+section {
+  background: #0e83cd;
+  color: #faf7ff;
+}
+
+section .container {
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .container h2 {
+  font-size: 1.575rem;
+  margin-bottom: 2rem;
+}
+
+section .container .buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .container a {
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #faf7ff;
+  border: 0.1rem solid #faf7ff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+a.btn-green:hover {
+  background-color: #7CB342;
+}
+
+a.btn-yellow:hover {
+  background-color: #FBC02D;
+}
+
+a.btn-orange:hover {
+  background-color: #F57C00;
+}
+
+a.btn-red:hover {
+  background-color: #E64A19;
+}
+
+a.btn-grey:hover {
+  background-color: #455A64;
+}
+/*# sourceMappingURL=main.css.map */

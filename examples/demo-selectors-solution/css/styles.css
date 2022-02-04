@@ -1,0 +1,74 @@
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+section {
+	padding: 3rem;
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+}
+
+/*
+	:nth-child() selectors
+	
+	This selects elements based upon their
+	position as a child within any parent
+	element.
+*/
+
+section:nth-child(2) {
+	background-color: tomato;
+}
+
+section:nth-child(3) {
+	background-color: khaki;
+}
+
+/*
+	:nth-last-child() selectors
+
+	This is the same thing, but you start
+	counting in reverse (i.e. starting from
+	the end and working your way backwards).
+*/
+
+section:nth-last-child(3) {
+	background-color: lightgreen;
+}
+
+section:nth-last-child(2) {
+	background-color: lightseagreen;
+}
+
+section:first-child {
+	background-color: crimson;
+}
+
+section:last-child {
+	background-color: steelblue;
+}
+
+section:only-child {
+	background-color: whitesmoke;
+	color: darkslategrey;
+}
+
+p:first-of-type {
+	font-family: sans-serif;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px gainsboro;
+}
+
+p:last-of-type {
+	font-family: sans-serif;
+	font-size: 1rem;
+}
+
+p:nth-of-type(2) {
+	display: none;
+}
+
+

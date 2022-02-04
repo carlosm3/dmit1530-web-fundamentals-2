@@ -1,0 +1,50 @@
+body {
+	font-family: sans-serif;
+	text-align: center;
+	color: white;
+}
+
+header {
+	height: 60vh;
+	/* Here, we're using the following background
+	   properties:
+	   - background-image
+	   - background-position
+	   - background-size
+	   - background-repeat */
+	background: url('../img/small-bg.webp') center bottom / cover no-repeat;
+	/* This is a little flexbox hack. Even though
+	   there is only one flex item, we can still
+	   use a flex container to centre it. */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: calc(2.5rem + 2vw);
+	text-shadow: 1px 1px 2px black;
+}
+
+main {
+	padding: 5vh;
+	display: flex;
+	flex-flow: column;
+}
+
+section {
+	height: 30vh;
+}
+
+section:first-of-type {
+	background-color: #73a302;
+}
+
+section:nth-of-type(2) {
+	background-color: #334839;
+	order: -1;
+}
+
+section:last-of-type {
+	background-color: #315002;
+}

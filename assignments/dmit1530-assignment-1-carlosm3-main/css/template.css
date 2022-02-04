@@ -1,0 +1,86 @@
+/* stolen from normalize, 
+   modern reset, and 
+   html5boilerplate main */
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.25;
+  -webkit-text-size-adjust: 100%;
+  color: #222;
+  box-sizing: border-box;
+  /* font-size: 112.5%; */
+}
+
+*, *:before, *:after { box-sizing: inherit;}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* These utility classes hide elements
+   from view. Use .sr-only for elements
+   that you still want a screen reader
+   to be able to access. */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* Remove all animations and transitions for 
+   people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom reset */
+h1, h2, h3, p, a {
+  margin: 0;
+  padding: 0;
+}

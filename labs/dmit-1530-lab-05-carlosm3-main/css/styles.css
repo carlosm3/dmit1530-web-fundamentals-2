@@ -1,0 +1,384 @@
+:root {
+    --svg-colour: #fff;
+    --light-red: #f44336;
+    --dark-red: #b71c1c;
+    --dark-grey: #263238;
+    --mid-grey: #607d8b;
+    --light-grey: #cfd8dc;
+}
+
+/* Helper Classes */
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Universal Styles */
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: var(--dark-grey);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Source Serif Pro", serif;
+}
+
+h3 {
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+h4 {
+    padding-top: 1rem;
+}
+
+svg {
+    width: 1rem;
+}
+
+svg path,
+polygon,
+rect {
+    fill: var(--svg-colour);
+}
+
+/* Header Styles */
+
+header {
+    background-color: var(--dark-red);
+    box-shadow: 0px 1px 10px var(--dark-grey);
+    /* Step 1: Make the header sticky. */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+header a {
+    color: var(--svg-colour);
+    text-decoration: none;
+}
+
+header .flex-container {
+    padding: 1rem;
+}
+
+.logo a {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.logo p {
+    letter-spacing: 0.3rem;
+}
+
+.logo svg {
+    margin-right: 2rem;
+    width: 3rem;
+}
+
+.menu-icon {
+    color: var(--svg-colour);
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu-icon svg {
+    width: 2rem;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    background-color: var(--dark-red);
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.open-nav {
+    max-height: 100vh;
+}
+
+.main-menu li {
+    border-bottom: 1px solid var(--svg-colour);
+}
+
+.main-menu li:last-of-type {
+    border-bottom: none;
+}
+
+.main-menu li:hover {
+    background-color: var(--light-red);
+    transition: all 0.4s ease;
+}
+
+.main-menu li a {
+    display: block;
+    padding: 1rem 2rem;
+}
+
+/* Main Styles */
+
+/* Step 2: Create a hero banner with a fixed background-attachment. */
+
+.hero-banner {
+    background: url("../img/stars-and-stripes.webp") center / cover no-repeat;
+    background-attachment: fixed;
+    height: calc(100vh - 121px);
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--svg-colour);
+    line-height: 1.2;
+    text-align: center;
+    text-shadow: 2px 2px 3px var(--dark-grey);
+}
+
+.hero-banner h2 {
+    font-size: 5rem;
+}
+
+.hero-banner p {
+    font-size: 1.8rem;
+}
+
+/* Step 3: Style the contact information. */
+
+.contact-info {
+    background: url("../img/hells-kitchen.webp") center / cover no-repeat;
+    color: var(--svg-colour);
+    font-size: 1.2em;
+    padding: 6rem 2rem;
+}
+
+.contact-info .flex-container {
+    justify-content: flex-start;
+    text-transform: uppercase;
+    margin: 1.2rem 0;
+}
+
+.contact-info svg {
+    margin-right: 1rem;
+}
+
+.contact-info a {
+    color: var(--svg-colour);
+}
+
+/* Contact Form */
+
+/* Step 4: Style the form for the mobile view. Include validation styles and the end matter. */
+
+form {
+    background-color: var(--svg-colour);
+    padding: 2rem;
+    border-radius: 0.4rem;
+    margin: 2rem;
+}
+
+form div {
+    padding: 0.5rem 0;
+}
+
+.form-intro {
+    padding-bottom: 2rem;
+}
+
+label {
+    display: block;
+    color: var(--mid-grey);
+    margin-bottom: 0.4rem;
+}
+
+label[for="spanish"] {
+    display: inline;
+    color: var(--dark-grey);
+}
+
+input:not([type="checkbox"]),
+select,
+textarea {
+    width: 100%;
+}
+
+select {
+    height: 1.8rem;
+}
+
+textarea {
+    max-width: 100%;
+    max-height: 10rem;
+}
+
+button {
+    background-color: var(--dark-red);
+    padding: 0.6rem 1.6rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    margin: 1rem 0;
+    color: var(--svg-colour);
+    font-size: 1.2rem;
+    user-select: none;
+}
+
+button:hover,
+button:focus {
+    background-color: var(--light-red);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.form-flex > div {
+    position: relative;
+}
+
+input + span {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    right: 0.2rem;
+    bottom: 2.8rem;
+}
+
+input:invalid + span {
+    background: url("../img/svg/exclamation.svg") right no-repeat;
+    background-size: 1rem;
+}
+
+input:valid + span {
+    background: url("../img/svg/check.svg") right no-repeat;
+    background-size: 1rem;
+}
+
+form > p {
+    padding-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--mid-grey);
+}
+
+form > p:nth-last-of-type(2) {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+form img {
+    display: inline;
+    width: 1rem;
+}
+
+/* Footer Styles */
+
+footer {
+    color: var(--svg-colour);
+    text-align: center;
+    padding: 2rem;
+}
+
+footer hr {
+    max-width: 50%;
+    margin: 3rem auto;
+    border: 1px solid var(--mid-grey);
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    padding: 2rem;
+}
+
+/* Tablet View */
+@media screen and (min-width: 720px) {
+    /* Step 5: Create a tablet view where the form switches to a two-column layout. */
+
+    .hero-banner {
+        height: calc(70vh - 121px);
+    }
+
+    .form-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form-flex > div {
+        width: 48%;
+    }
+
+    .disclaimer {
+        padding: 2rem 0;
+        max-width: 50%;
+        margin: auto;
+    }
+}
+
+/* Desktop View */
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    /* Desktop Navigation Styles */
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .container > .flex-container {
+        min-width: 50%;
+    }
+
+    nav {
+        position: static;
+        max-height: unset;
+    }
+
+    .main-menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .main-menu li {
+        border: none;
+    }
+
+    .main-menu li:hover {
+        background-color: unset;
+        text-decoration: underline;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    /* Main Styles */
+
+    /* Step 6: Finish up by styling the desktop layout for the form and contact information. */
+
+    main .container {
+        display: flex;
+        padding: 6rem 2rem;
+    }
+
+    .contact-info {
+        order: -1;
+        width: calc(100% / 3);
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    form {
+        margin: unset;
+        border-radius: 0 0.4rem 0.4rem 0;
+    }
+}

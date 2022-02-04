@@ -1,0 +1,71 @@
+body {
+	background: center / cover no-repeat url("../img/barber-supplies.jpg");
+	text-align: center;
+	font-family: 'Josefin Slab', serif;
+	color: white;
+}
+
+/* TYPOGRAPHIC STYLES */
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	padding: 3rem 0;
+}
+
+h2 {
+	line-height: 2rem;
+	padding-bottom: 1rem;
+}
+
+p {
+	font-size: 1.2rem;
+}
+
+/* LAYOUT */
+
+section {
+	min-width: 65rem;
+	max-width: 90rem;
+	margin: 0 auto;
+}
+
+div.inner-container {
+	display: flex;
+	flex-direction: row;
+}
+
+div.col {
+	background-color: rgba(0,0,0,0.7);
+	padding: 2rem;
+	margin: 0 0.5rem;
+	border: 0.1rem solid rgba(255,255,255,0.5);
+	border-radius: 1rem;
+
+	/* Flex Property */
+
+	/* This is the shorthand property for flex-grow, flex-shrink, and flex-basis. */
+
+	flex: 1 1 0;
+}
+
+div.col:nth-child(3) {
+	flex: 2 1 0;
+}
+
+svg {
+	width: 3rem;
+	margin: 1rem 0;
+}
+
+svg path {
+	fill: white;
+}
+
+
+
+
+
+

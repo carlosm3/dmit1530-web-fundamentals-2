@@ -1,0 +1,48 @@
+body {
+	font-weight: 400;
+	line-height: 1.5;
+	font-size: 100%;
+}
+
+header {
+	padding: 8px 16px;
+	border-bottom: 1px solid rgb(222, 222, 222);
+	min-width: 960px;
+	box-shadow: 0 0 8px 0 rgb(222, 222, 222);
+}
+
+img {
+	width: 100px;
+}
+
+nav,
+ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+li {
+	margin: 0 12px;
+}
+
+.button-links a,
+.button-links a:hover {
+	border: 1px solid rgb(212, 212, 212);
+	border-radius: 4px;
+	padding: 4px 16px;
+	color: grey;
+	text-decoration: none;
+	text-align: center;
+}
+
+.button-links a:hover,
+.button-links a:focus {
+	box-shadow: 0 0 5px 2px rgb(65, 114, 238);
+}
+
+
+
+
+
+

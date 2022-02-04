@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Form Structure Demo</title>
+
+		<meta name="author" content="Valerie Watson | vwatson@nait.ca">
+		<meta name="description" content="This is a quick review of HTML5 forms, form structure, and different form components.">
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="css/modern-reset.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<header>
+			<h1>HTML5 Forms</h1>
+		</header>
+		<div class="container">	
+			<main>
+				<!-- The form element needs two attributes:
+				    1. action: is where the data will be sent to. 
+					2. method: is how the data will get there. POST is more secure than GET. -->
+				<form action="#" method="POST">
+					<div>
+						<!-- Every input requires a label. The label's for attribute must match the input's ID. -->
+						<label for="text-field">Generic Text Field</label>
+						<!-- Input elements are void (or self-closing) elements. -->
+						<input type="text" id="text-field" name="text-field" placeholder="First and Last Name" autofocus>
+						<!-- The placeholder attribute gives our user an example of what we're looking for (until they start typing). -->
+						<!-- The autofocus attribute focuses on this particular field once the page loads. -->
+					</div>
+					<div>
+						<!-- The email input type makes our browser do a little bit of validation before even sending (or trying to send) the data anywhere. In this case, it will for {string}@{string}.{domain}. -->
+						<label for="email">Email Address</label>
+						<input id="email" name="email" type="email" autocomplete="off">
+					</div>
+					<div>
+						<!-- Regular Expressions (RegEx) are patterns that let us check the format of a user's data before we send it off to our database. -->
+						<label for="phone">Phone Number</label>
+						<input id="phone" name="phone" type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+					</div>
+					<div>
+						<!-- In order to pass submit, the URL input must begin with http:// or https://. -->
+						<label for="url">Website URL</label>
+						<input id="url" name="url" type="url">
+					</div>
+					<div>
+						<!-- This input type makes all of the user's entered characters look like bullet operators. However, this is just security theatre (to prevent shoulder surfing); it does not actually make anything more secure. -->
+						<label for="password">Password</label>
+						<input id="password" name="password" type="password">
+					</div>
+					<div>
+						<!-- The user cannot see the numbers that they choose; however, you can se the minimum value for the slider, the maximum value, and the increments between each number. -->
+						<label for="range">Range Slider</label>
+						<input id="range" name="range" type="range" min="1" max="5" step="1">
+					</div>
+					<div>
+						<!-- The value placeholder allows us to set a default value for the input. -->
+						<label for="colour">Colour Selector</label>
+						<input id="colour" name="colour" type="color" value="#00ff00">
+					</div>
+					<!-- The <fieldset> element is used to group form controls or sections of a form together. -->
+					<fieldset>
+						<!-- The <legend> element is used as a caption or title for this grouping of like-things. -->
+						<legend>Radio Button Field</legend>
+						<p>Which of the following is your favourite ice cream flavour?</p>
+
+						<!-- In a set of radio buttons, only one button can be selected at a time. In order to tell our browser that a group of buttons belong with each other, they must all share the same name attribute value. -->
+						<div>
+							<input id="chocolate" name="ice-cream" type="radio" value="chocolate">
+							<label for="chocolate">Chocolate</label>
+						</div>
+
+						<div>
+							<input id="vanilla" name="ice-cream" type="radio" value="vanilla">
+							<label for="vanilla">Vanilla</label>
+						</div>
+
+						<div>
+							<input id="strawberry" name="ice-cream" type="radio" value="strawberry">
+							<label for="strawberry">Strawberry</label>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Checkbox Field</legend>
+						<p>Which of the following web languages are you fluent in?</p>
+
+						<!-- Checkboxes allow the user to select one or more options at a time. Just like radio buttons, they must share the same name attribute in order to be connected or to be considered part of the same grouping. -->
+						<div>
+							<input id="markup" name="web-languages" type="checkbox" value="markup">
+							<label for="markup">HTML</label>
+						</div>
+						<div>
+							<input id="styles" name="web-languages" type="checkbox" value="styles">
+							<label for="styles">CSS</label>
+						</div>
+						<div>
+							<input id="scripts" name="web-languages" type="checkbox" value="scripts">
+							<label for="scripts">JS</label>
+						</div>
+						<div>
+							<input id="back-end" name="web-languages" type="checkbox" value="back-end">
+							<label for="back-end">PHP</label>
+						</div>
+					</fieldset>
+
+					<fieldset>
+						<legend>Dropdown Options</legend>
+						<!-- All of the options for a dropdown field go inside of the <select> element. Because of this, we don't have to worry about matching attributes or making sure that our browser knows these things are grouped together. -->
+						<div>
+							<label for="select-field">Choose from the following options:</label>
+							<!-- Here, we're using the first option as a prompt. However, we're disabilng it to make sure that the user has to choose something else. -->
+							<select id="select-field" name="select-field">
+								<option disabled>What's your favourite colour?</option>
+								<option value="red">Red</option>
+								<option value="yellow">Yellow</option>
+								<option value="blue">Blue</option>
+							</select>
+						</div>
+					</fieldset>
+
+					<div>
+						<!-- The columns and rows attributes give us an initial size for the textarea. This can still be overridden by the user. -->
+						<label for="message">Leave Us A Message</label>
+						<textarea id="message" name="message" cols="70" rows="10"></textarea>
+					</div>
+
+					<!-- SUBMIT -->
+					<div>
+						<!-- The submit button does not need a label; instead, you can use the value attribute to put some word in the button itself. -->
+						<input name="submit" type="submit" value="Send">
+					</div>
+				</form>
+			</main>
+		</div>
+	</body>
+</html>

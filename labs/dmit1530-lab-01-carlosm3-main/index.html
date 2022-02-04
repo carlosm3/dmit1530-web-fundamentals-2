@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lab 01: Responsive Flex Layout</title>
+        <!-- Change this meta tag to reflect your own information. -->
+        <meta name="author" content="Carlos Marquez | jmarquez2@nait.ca" />
+        <meta
+            name="description"
+            content="This is the first Lab for the semester, which explores a responsive flex layout."
+        />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/modern-reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+    <body>
+        <header>
+            <svg
+                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                xmlns:cc="http://creativecommons.org/ns#"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:svg="http://www.w3.org/2000/svg"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                version="1.1"
+                x="0px"
+                y="0px"
+                viewBox="0 0 100 125"
+            >
+                <g transform="translate(0,-952.36218)">
+                    <path
+                        d="m 48.938734,968.14909 c -0.1366,0.0119 -0.2635,0.0586 -0.4062,0.0937 L 7.2825343,979.33654 c -1.0035,0.27478 -1.6707,1.43127 -1.4062,2.4375 l 11.0623997,41.21876 c 0.2614,1.0148 1.4231,1.6998 2.4376,1.4375 l 20.4687,-5.4687 30.0313,17.375 c 0.9141,0.5318 2.2324,0.1722 2.75,-0.75 L 93.93873,998.58658 c 0.5175,-0.9016 0.1767,-2.1908 -0.7187,-2.7188 L 56.251334,974.55529 c -0.283,-0.16909 -0.6082,-0.26669 -0.9376,-0.28125 -0.7143,-0.0174 -1.4241,0.38102 -1.7812,1 l -0.7188,1.25 -1.8437,-6.84375 c -0.2756,-1.10303 -1.0743,-1.61457 -2.0313,-1.53125 z m -1.3124,4.5 c 3.3461,12.4549 6.672,24.91519 10,37.37501 -12.8349,3.5145 -26.2738,7.0514 -37.3438,10 l -10.0312,-37.34376 37.375,-10.03125 z m 8.375,6.375 33.499996,19.31249 -19.343796,33.53132 -24.8438,-14.375 9.2813,-2.5 16.6563,9.5937 c 0.9087,0.5123 2.201,0.1559 2.7187,-0.75 l 13.499996,-23.3437 c 0.5123,-0.90902 0.1558,-2.20112 -0.75,-2.71882 L 57.876334,981.11784 c -0.2831,-0.16909 -0.6082,-0.26669 -0.9376,-0.28125 -0.7143,-0.0174 -1.4241,0.38102 -1.7812,1 l -0.625,1.09375 -0.25,-0.9375 1.7188,-2.96875 z"
+                    />
+                    <path
+                        d="m 45.464697,974.6254 a 2.0001999,2.0001999 0 0 0 -0.532594,0.0675 l -31.299589,8.34672 a 2.0001999,2.0001999 0 0 0 -1.416189,2.45151 l 6.806444,25.31697 a 2.0001999,2.0001999 0 0 0 2.449311,1.4129 l 31.259727,-8.3866 a 2.0001999,2.0001999 0 0 0 1.413993,-2.4482 l -6.766618,-25.27814 a 2.0001999,2.0001999 0 0 0 -1.914485,-1.48266 z"
+                    />
+                </g>
+            </svg>
+            <h1>Responsive Flex Layout</h1>
+        </header>
+        <main class="container">
+            <h2>Fluid & Responsive Flex Items</h2>
+            <section>
+                <img
+                    src="https://source.unsplash.com/random/500x400"
+                    alt="A random photograph with 500px by 400px dimensions."
+                />
+                <div>
+                    <h3>Sub-Heading</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ex tempore commodi non velit hic ullam soluta tenetur.
+                        Sint autem exercitationem debitis rem. Suscipit unde
+                        quam ab perferendis impedit laboriosam fugiat.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Blanditiis, aut. Repellat ullam at numquam expedita
+                        laborum! Sequi fugiat nulla libero vero! Sequi odio
+                        suscipit, similique labore fuga ab recusandae dolorum?
+                    </p>
+                </div>
+            </section>
+            <section>
+                <img
+                    src="https://source.unsplash.com/random/500x400"
+                    alt="A random photograph with 500px by 400px dimensions."
+                />
+                <div>
+                    <h3>Sub-Heading</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Dolores tempora dicta quas! Quasi, non doloribus beatae
+                        culpa hic doloremque exercitationem voluptatem esse
+                        ducimus corporis odio, assumenda aperiam commodi debitis
+                        ad.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <img
+                    src="https://source.unsplash.com/random/500x400"
+                    alt="A random photograph with 500px by 400px dimensions."
+                />
+                <div>
+                    <h3>Sub-Heading</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ab, perspiciatis labore dolorum deserunt illo unde eos
+                        obcaecati, accusantium tenetur animi veritatis corporis,
+                        iure esse eaque totam molestias eligendi? Maiores,
+                        dolorem.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <img
+                    src="https://source.unsplash.com/random/500x400"
+                    alt="A random photograph with 500px by 400px dimensions."
+                />
+                <div>
+                    <h3>Sub-Heading</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Autem nihil molestias commodi eveniet quibusdam minus
+                        distinctio sequi dicta voluptatum ea repellendus ullam
+                        labore veniam rem natus quisquam repudiandae, culpa nam.
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Aut, nesciunt laudantium? Nisi quo adipisci, eaque
+                        et ut sapiente rem aliquid aspernatur eius quis. Optio,
+                        magnam quae alias praesentium pariatur distinctio.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                For Educational Purposes Only &copy; 2021 | Source:
+                <a
+                    href="https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/"
+                    >Smashing Magazine Guidelines for Responsive Web Design</a
+                >
+            </p>
+        </footer>
+    </body>
+</html>

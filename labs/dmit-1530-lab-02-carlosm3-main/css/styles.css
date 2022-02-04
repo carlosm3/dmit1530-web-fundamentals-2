@@ -1,0 +1,206 @@
+/*
+
+COLOUR PALETTE
+
+orange accent       ff8e2d
+teal                20abad
+darker teal         007c84
+off-white           eeeaeb
+
+GOOGLE FONTS 
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Pacifico', cursive;
+
+*/
+
+/* UNIVERSAL STYLES */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #eeeaeb;
+    font-family: "Poppins", sans-serif;
+}
+
+h1,
+.hero .title {
+    padding-top: 1rem;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+}
+
+header {
+    background-color: #20abad;
+}
+
+ul.menu a,
+ul.menu a:link,
+ul.menu a:active,
+ul.menu a:visited {
+    display: block;
+    color: #eeeaeb;
+    text-transform: uppercase;
+    text-underline-position: under;
+}
+
+ul.menu a:hover {
+    background-color: #007c84;
+    border-radius: 0.5rem;
+}
+
+ul.submenu a,
+ul.submenu a:link,
+ul.submenu a:active,
+ul.submenu a:visited {
+    text-decoration: none;
+}
+
+nav svg {
+    display: none;
+}
+
+section.hero {
+    background: url("../img/grapefruit-bg-sm.webp") center / cover;
+    /* height: 35rem; */
+    height: 35rem;
+    padding: 3rem;
+}
+
+.hero .cta a,
+.hero .cta a:link,
+.hero .cta a:active,
+.hero .cta a:visited {
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    color: #eeeaeb;
+    background-color: #20abad;
+    /* font-weight: bold; */
+    text-transform: uppercase;
+}
+
+/* MOBILE VIEW */
+ul.menu {
+    padding: 1.5rem 0;
+}
+
+ul.menu a {
+    padding: 0.75rem;
+}
+
+ul.submenu a {
+    padding-left: 2rem;
+}
+
+.hero .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+}
+
+.hero .wrapper p:nth-child(2) {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.hero .title {
+    font-size: 3.75rem;
+    font-weight: bold;
+}
+
+.sr-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 720px) {
+    nav {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+
+    ul.menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    ul.menu svg {
+        display: unset;
+        width: 1rem;
+        fill: #eeeaeb;
+    }
+
+    ul.menu li {
+        flex: 1 0 auto;
+        position: relative;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    ul.submenu {
+        visibility: hidden;
+        position: absolute;
+        background-color: #20abad;
+        padding: 0;
+        border-radius: 0.5rem;
+    }
+
+    ul.menu li:hover > ul {
+        visibility: visible;
+    }
+
+    ul.submenu li {
+        margin: 0;
+        text-align: left;
+    }
+
+    ul.submenu a {
+        padding-left: 0.75rem;
+    }
+
+    ul.menu li:focus-within > ul,
+    ul.menu li > ul:focus {
+        visibility: visible;
+        display: block;
+    }
+
+    section.hero {
+        background: url("../img/grapefruit-bg.webp") no-repeat center center;
+        height: calc(100% - 160px);
+    }
+
+    div.wrapper {
+        max-width: 24rem;
+        margin-top: 6rem;
+    }
+
+    /* Center content in medium view */
+    div.container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* LARGEST VIEW */
+@media screen and (min-width: 1024px) {
+    div.container {
+        max-width: 1024px;
+        justify-content: flex-end;
+        margin: 0 auto;
+    }
+
+    /* Margin added so that title aligns with contact li */
+    div.wrapper {
+        margin-right: 5rem;
+    }
+}

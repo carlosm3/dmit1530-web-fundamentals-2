@@ -1,0 +1,46 @@
+/* IMPORTING FONT FILES */
+
+@font-face {
+    font-family: 'Typewriter';
+    src: url('veteran_typewriter-webfont.woff2') format('woff2'),
+         url('veteran_typewriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* TYPOGRAPHY  */
+
+body {
+    background-color: #dedcda;
+    font-family: 'Typewriter', serif;
+    color: #3b373f;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Beth Ellen', cursive;
+    color: #623f53;
+    font-size: 4rem;
+    padding-top: 2.5rem;
+}
+
+p:last-of-type {
+    padding-top: 1.5rem;
+}
+
+/* LAYOUT */
+
+.container {
+    width: 60vw;
+    margin: auto;
+    padding-top: 30vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
