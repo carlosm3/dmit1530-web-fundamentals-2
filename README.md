@@ -1,6 +1,6 @@
 # Web Fundamentals 2
 
-Repository containing assignments, labs, and examples from the Web Fundamentals 2 course at NAIT. This repository showcases work done using technologies such as HTML5, CSS3, Sass, JavaScript, and Bootstrap.
+Repository containing assignments, labs, and examples from the Web Fundamentals 2 course at [NAIT](https://www.nait.ca/nait/home). This repository showcases work done using technologies such as HTML5, CSS3, Sass, JavaScript, and Bootstrap.
 
 ## Tech Stack
 
